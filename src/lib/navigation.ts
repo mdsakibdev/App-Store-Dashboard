@@ -1,22 +1,13 @@
 import type { IconType } from "react-icons";
-
 import {
   FiBarChart2,
   FiBox,
-  FiBriefcase,
-  FiChevronDown,
-  FiClipboard,
   FiCreditCard,
   FiDollarSign,
-  FiFileText,
   FiGrid,
-  FiLayers,
   FiPackage,
-  FiPieChart,
-  FiRefreshCcw,
   FiSettings,
   FiShoppingCart,
-  FiTag,
   FiTruck,
   FiUsers,
 } from "react-icons/fi";
@@ -37,147 +28,83 @@ export const navigation: NavigationItem[] = [
     href: "/dashboard",
     icon: FiGrid,
   },
-
   {
     title: "Products",
-    icon: FiBox,
+    icon: FiPackage,
     children: [
-      {
-        title: "All Products",
-        href: "/products",
-      },
-      {
-        title: "Categories",
-        href: "/categories",
-      },
-      {
-        title: "Brands",
-        href: "/brands",
-      },
+      { title: "All Products", href: "/products" },
+      { title: "Categories", href: "/categories" },
+      { title: "Brands", href: "/brands" },
     ],
   },
-
-  // Supplier Module
   {
     title: "Suppliers",
     icon: FiTruck,
     children: [
-      {
-        title: "01. Add Supplier",
-        href: "/suppliers/add",
-      },
-      {
-        title: "02. All Supplier",
-        href: "/suppliers/all",
-      },
-      {
-        title: "03. Supplier Payment",
-        href: "/suppliers/payments",
-      },
-      {
-        title: "04. All Payment",
-        href: "/suppliers/all-payments",
-      },
+      { title: "01. Add Supplier", href: "/suppliers/add" },
+      { title: "02. All Supplier", href: "/suppliers/all" },
+      { title: "03. Supplier Payment", href: "/suppliers/payments" },
+      { title: "04. All Payment", href: "/suppliers/all-payments" },
     ],
   },
-
+  {
+    title: "Customers",
+    icon: FiUsers,
+    children: [
+      { title: "01. Add New", href: "/customers/add" },
+      { title: "02. View All", href: "/customers/all" },
+      { title: "03. Customer Collection", href: "/customers/payments" },
+      { title: "04. All Customer Collection", href: "/customers/all-payments" },
+    ],
+  },
   {
     title: "Purchases",
     icon: FiShoppingCart,
     children: [
-      {
-        title: "All Purchases",
-        href: "/purchases",
-      },
-      {
-        title: "Purchase Return",
-        href: "/purchase-returns",
-      },
+      { title: "All Purchases", href: "/purchases" },
+      { title: "Purchase Return", href: "/purchases/returns" },
     ],
   },
-
   {
     title: "Sales",
     icon: FiDollarSign,
     children: [
-      {
-        title: "All Sales",
-        href: "/sales",
-      },
-      {
-        title: "Sales Return",
-        href: "/sales-returns",
-      },
+      { title: "All Sales", href: "/sales" },
+      { title: "Sales Return", href: "/sales/returns" },
     ],
   },
-
-  {
-    title: "People",
-    icon: FiUsers,
-    children: [
-      {
-        title: "Customers",
-        href: "/customers",
-      },
-    ],
-  },
-
   {
     title: "Inventory",
-    icon: FiLayers,
+    icon: FiBox,
     children: [
-      {
-        title: "Stock",
-        href: "/stock",
-      },
-      {
-        title: "Warranty",
-        href: "/warranty",
-      },
+      { title: "Stock", href: "/inventory/stock" },
+      { title: "Warranty", href: "/inventory/warranty" },
     ],
   },
-
   {
     title: "Accounts",
     icon: FiCreditCard,
     children: [
-      {
-        title: "Cash Book",
-        href: "/cash-book",
-      },
-      {
-        title: "Expenses",
-        href: "/expenses",
-      },
-      {
-        title: "Cost Categories",
-        href: "/cost-categories",
-      },
+      { title: "Cash Book", href: "/accounts/cash-book" },
+      { title: "Expenses", href: "/accounts/expenses" },
+      { title: "Cost Categories", href: "/accounts/cost-categories" },
     ],
   },
-
   {
     title: "Reports",
-    icon: FiPieChart,
+    icon: FiBarChart2,
     children: [
-      {
-        title: "Sales Report",
-        href: "/reports/sales",
-      },
-      {
-        title: "Purchase Report",
-        href: "/reports/purchases",
-      },
-      {
-        title: "Stock Report",
-        href: "/reports/stock",
-      },
+      { title: "Sales Report", href: "/reports/sales" },
+      { title: "Purchase Report", href: "/reports/purchases" },
+      { title: "Stock Report", href: "/reports/stock" },
     ],
   },
-
   {
     title: "Settings",
     href: "/settings",
     icon: FiSettings,
   },
 ];
+
+export const navigationItems = navigation;
+export default navigation;
