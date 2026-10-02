@@ -61,8 +61,11 @@ export const navigation: NavigationItem[] = [
     title: "Purchases",
     icon: FiShoppingCart,
     children: [
-      { title: "All Purchases", href: "/purchases" },
-      { title: "Purchase Return", href: "/purchases/returns" },
+      { title: "01. Add Purchase", href: "/purchase/add" },
+      { title: "02. All Purchase", href: "/purchase/all" },           // Updated to /purchase/all
+      { title: "03. Item Wise", href: "/purchase/item-wise" },
+      { title: "04. Add Purchase Return", href: "/purchase/return/add" },
+      { title: "05. All Purchase Return", href: "/purchase/return/all" }, // Updated to /purchase/return/all
     ],
   },
   {
@@ -108,3 +111,5 @@ export const navigation: NavigationItem[] = [
 
 export const navigationItems = navigation;
 export default navigation;
+
+
