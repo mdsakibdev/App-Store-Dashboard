@@ -72,8 +72,25 @@ export const navigation: NavigationItem[] = [
     title: "Sales",
     icon: FiDollarSign,
     children: [
-      { title: "All Sales", href: "/sales" },
-      { title: "Sales Return", href: "/sales/returns" },
+      { title: "01. Retail Sale", href: "/sales/retail" },
+      { title: "02. Due Sale", href: "/sales/due" },
+      { title: "03. All Sale", href: "/sales" },
+      { title: "04. Quotation", href: "/sales/quotation" },
+      { title: "05. All Quotation", href: "/sales/quotations" },
+      { title: "06. Search Item Wise", href: "/sales/item-wise" },
+      { title: "07. Search Client Wise", href: "/sales/client-wise" },
+      { title: "08. Sale Return", href: "/sales/returns" },
+      { title: "09. All Sale Return", href: "/sales/returns/all" },
+    ],
+  },
+  {
+    title: "Cost",
+    icon: FiCreditCard,
+    children: [
+      { title: "01. Cost Category", href: "/cost/categories" },
+      { title: "02. Field of Cost", href: "/cost/fields" },
+      { title: "03. New Cost", href: "/cost/new" },
+      { title: "04. All Cost", href: "/cost" },
     ],
   },
   {
